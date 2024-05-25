@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
     #api key as argument
     parser = argparse.ArgumentParser(description='Get location using Google Maps Geolocation API.')
-    parser.add_argument('api_key', type=str, help='Your Google Maps Geolocation API key.')
+    parser.add_argument('--api_key', type=str, help='Your Google Maps Geolocation API key.')
     parser.add_argument('--interface', type=str, default='wlan0', help='The network interface to use for scanning (default is wlan0).')
     args = parser.parse_args()
 
